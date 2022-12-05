@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Hello, world!</title>
+    <style>
+        .form-wrapper {
+            padding: 30px;
+            background: #eee;
+        }
+        
+        .progress-wrapper {
+            margin-bottom: 2.5rem;
+            padding-left: 3rem;
+            margin-top: 1rem;
+        }
+        
+        .progress-wrapper label {
+            font-size: 0.75rem;
+            margin-bottom: 0.75rem;
+            opacity: 0.6;
+        }
+        
+        .progress-wrapper li {
+            border-radius: 50%;
+            border: 2px solid #e5e5e5;
+            height: 40px;
+            width: 40px;
+            list-style: none;
+            margin-right: 9rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
+        }
+        
+        .progress-wrapper li:not(.active) {
+            font-size: 8px;
+        }
+        
+        .progress-wrapper li.active i {
+            color: #fff;
+        }
+        
+        .progress-wrapper li.active {
+            border: 2px solid #604999;
+            background-color: #604999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .progress-wrapper li::before {
+            content: "";
+            position: absolute;
+            left: 34px;
+            top: 40%;
+            width: 140px;
+            height: 4px;
+            background: #e5e5e5;
+        }
+        
+        .progress-wrapper div:first-child li::after,
+        .progress-wrapper div:last-child li::before {
+            display: none;
+        }
+        
+        .progress-wrapper li.active::before,
+        .progress-wrapper li.active::after {
+            content: "";
+            border-top-right-radius: 1.25rem;
+            border-bottom-right-radius: 1.25rem;
+            background: #604999;
+        }
+        
+        .progress-wrapper li::after {
+            content: "";
+            position: absolute;
+            right: 35px;
+            top: 40%;
+            width: 140px;
+            height: 4px;
+            background: #e5e5e5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="progress-wrapper d-flex justify-content-between">
+            <div>
+
+                <li class="active">
+                    <i class="fa-solid fa-check"></i>
+                </li>
+                <label>Step 1</label>
+            </div>
+            <div>
+
+                <li class="active">
+                    <i class="fa-solid fa-check"></i>
+                </li>
+                <label>Step 2</label>
+            </div>
+            <div>
+                <li class="active">
+                    <i class="fa-solid fa-check"></i>
+                </li>
+                <label>Step 3</label>
+            </div>
+            <div>
+                <li>
+                    <i class="fa-solid fa-circle"></i>
+                </li>
+                <label>Step 4</label>
+            </div>
+        </ul>
+
+        <section class="form-wrapper">
+            <h4>Step 4</h4>
+            <form action="">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="textfeild1">Label 1</label>
+                            <input type="text" class="form-control" id="textfeild1">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="textselect1">Label 2</label>
+                            <select class="form-control" id="textselect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="textfeild2">Label 3</label>
+                            <input type="text" class="form-control" id="textfeild2">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="textfeild1">Label 4</label>
+                            <input type="text" class="form-control" id="textfeild1">
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="textfeild2">Label 5</label>
+                            <input type="text" class="form-control" id="textfeild2">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="textselect1">Label 6</label>
+                            <select class="form-control" id="textselect1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <label for="" class="d-block">Label 7</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Lorem Ipsum 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Lorem Ipsum 2</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
